@@ -23,8 +23,8 @@
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintTop_toBottomOf="@+id/display_order"
-
         >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,14 +35,13 @@
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="18sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimaryDark"
             android:padding="5dp"
             />
         <EditText
             android:id="@+id/name"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="@string/alphonce_mutebi"
             android:textColor="@android:color/black"
             android:inputType="text"
             />
@@ -58,14 +57,13 @@
             android:layout_height="wrap_content"
             android:text="@string/address"
             android:textSize="18sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimaryDark"
             android:padding="5dp"
             />
         <EditText
             android:id="@+id/address"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="@string/apartment"
             android:textColor="@android:color/black"
             android:inputType="textMultiLine"
             android:autofillHints="@string/address" />
@@ -81,14 +79,13 @@
             android:layout_height="wrap_content"
             android:text="@string/phone"
             android:textSize="18sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimaryDark"
             android:padding="5dp"
             />
         <EditText
             android:id="@+id/phone"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="_0726111690"
             android:textColor="@android:color/black"
             android:inputType="phone"
             android:maxLength="10"
@@ -105,14 +102,14 @@
             android:layout_height="wrap_content"
             android:text="@string/note"
             android:textSize="18sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimaryDark"
             android:padding="5dp"
             />
         <EditText
             android:id="@+id/note"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="@string/write_a_note_for_this_order"
+            android:hint=""
             android:textColor="@android:color/black"
             android:inputType="textMultiLine"
             android:maxLength="150" />
@@ -165,6 +162,8 @@
 
 
     </RadioGroup>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 

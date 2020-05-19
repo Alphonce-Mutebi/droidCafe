@@ -72,10 +72,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.location:
-                Uri gmmIntentUri = Uri.parse("geo:27.2038,77.5011?q=java house");
+                Uri gmmIntentUri = Uri.parse("geo:-1.325405,36.822110");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
-                startActivity(mapIntent);
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
                 break;
 
             case R.id.action_about_us:
