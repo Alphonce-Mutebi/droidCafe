@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+   <TextView
+       android:id="@+id/text_intro"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/droid_desserts"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:textColor="@color/colorPrimary"
+       android:layout_marginTop="16dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/text_choose_dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_dessert"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_intro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/donut"
+        android:onClick="showDonutOrderMessage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/donut"
+        app:layout_constraintTop_toBottomOf="@+id/text_choose_dessert"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/donuts_are_glazed_and_sprinkled_with_candy"
+        />
+    <TextView
+        android:id="@+id/text_donut"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/donuts_are_glazed_and_sprinkled_with_candy"
+        app:layout_constraintTop_toBottomOf="@+id/text_choose_dessert"
+        app:layout_constraintLeft_toRightOf="@+id/donut"
+        app:layout_constraintBottom_toBottomOf="@+id/donut"
+        />
+    <ImageView
+        android:id="@+id/ice_ream"
+        android:onClick="showIceCreamMessage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ice_cream"
+        app:layout_constraintTop_toBottomOf="@+id/donut"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/ice_cream_sandwiches_have_chocolate_and_vanilla_filling"
+        />
+    <TextView
+        android:id="@+id/text_ice_cream"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ice_cream_sandwiches_have_chocolate_and_vanilla_filling"
+        app:layout_constraintTop_toBottomOf="@+id/donut"
+        app:layout_constraintLeft_toRightOf="@+id/ice_ream"
+        app:layout_constraintBottom_toBottomOf="@+id/ice_ream"
+        />
+    <ImageView
+        android:id="@+id/froyo"
+        android:onClick="showFroyoOrderMessage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/frozen_yorghut"
+        app:layout_constraintTop_toBottomOf="@+id/ice_ream"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/froyo_is_a_premium_self_serve_frozen_yogurt"
+        />
+    <TextView
+        android:id="@+id/text_froyo"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ice_cream_sandwiches_have_chocolate_and_vanilla_filling"
+        app:layout_constraintTop_toBottomOf="@+id/ice_ream"
+        app:layout_constraintLeft_toRightOf="@+id/froyo"
+        app:layout_constraintBottom_toBottomOf="@+id/froyo"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
